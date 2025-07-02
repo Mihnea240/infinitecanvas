@@ -1,0 +1,27 @@
+{
+	"name": "infinitecanvas",
+	"version": "1.0.0",
+	"description": "Infinite canvas for html elemnets",
+	"main": "infinitecanvas.js",
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Mihnea240/infinitecanvas.git"
+	},
+	"exports":{
+		".": {
+			"import": "./infinitecanvas.js",
+			"types": "./infinitecanvas.d.ts"
+		}
+	},
+	"author": "Curca Mihai Mihnea",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Mihnea240/infinitecanvas/issues"
+	},
+	"homepage": "https://github.com/Mihnea240/infinitecanvas#readme",
+	"dependencies": {
+		"customdrag": "github:Mihnea240/customdrag#dist",
+		"vec2": "github:Mihnea240/vec2"
+	}
+}
