@@ -10,6 +10,11 @@ A lightweight web component that provides an infinite, zoomable and pannable can
 
 ## Installation
 
+### Via GitHub
+```bash
+npm install github:Mihnea240/infinitecanvas#dist
+```
+
 ## Content Positioning
 
 Place content using absolute positioning within the canvas:
@@ -25,7 +30,8 @@ Place content using absolute positioning within the canvas:
   <img src="image.jpg" style="position: absolute; top: 300px; left: 150px;" />
 </infinite-canvas>
 ```
-## [Demo](https://mihnea.github.io/infinitecanvas/example)
+**TIP:** Use transitions on the transform property for smooth animations.
+## [Demo](https://mihnea240.github.io/infinitecanvas/example)
 
 ## API Reference
 
@@ -78,15 +84,4 @@ import { vec2 } from "infinitecanvas";
 const canvasPoint = new vec2(100, 200);
 const screenPoint = canvas.canvasToScreen(canvasPoint);
 // canvasPoint is modified in place and returned
-```
-
-## Vector Utility
-
-The package exports the `vec2` class for 2D vector operations:
-
-```javascript
-import { vec2 } from "infinitecanvas";
-
-const clickPosition = new vec2(event.clientX, event.clientY);
-canvas.screenToCanvas(clickPosition); // clickPosition is modified in place
 ```
